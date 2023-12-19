@@ -16,10 +16,8 @@ h1 {
   font-weight: 600;
 }
 
-table,
-table tr,
-table td {
-  border: 0px;
+table {
+  border-collapse: collapse;
 }
 
 table {
@@ -29,12 +27,12 @@ table {
 table th {
   font-weight: 400;
   text-align: left;
+  padding-bottom: 8px;
 }
 
 table thead tr,
 table tbody tr {
-  border-bottom: 2px solid red !important;
-  background-color: none;
+  border-bottom: 2px solid #282828;
 }
 
 table tbody td {
