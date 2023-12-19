@@ -14,14 +14,13 @@ body {
 h1 {
   font-size: 32px;
   font-weight: 600;
-}
-
-table {
-  border-collapse: collapse;
+  margin-bottom: 38px;
 }
 
 table {
   width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 table th {
@@ -50,6 +49,16 @@ table tbody td {
   padding-right: 16px;
 }
 
+p[aria-label="product name"] {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+p[aria-label="product color"] {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
 .product img {
   height: 80px;
   width: 80px;
@@ -60,6 +69,26 @@ table tbody td {
 .quantity {
   margin-right: 16px;
   width: 100px;
+  border: 1px solid #333333;
+  padding: 12px 8px;
+  position: relative;
+  background-image: url("https://api.iconify.design/radix-icons/caret-sort.svg?color=%23bebebe");
+  background-position: center right 12px;
+  background-size: auto 22px;
+  background-repeat: no-repeat;
+  caret-color: transparent;
+  color: #bebebe;
+}
+
+.quantity::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  height: 34px;
+  width: 23px;
+  cursor: pointer;
 }
 
 .total-price {
@@ -67,6 +96,15 @@ table tbody td {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+tfoot td p {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+tfoot > tr:first-of-type p {
+  margin-top: 16px;
 }
 
 tfoot td:last-of-type {
