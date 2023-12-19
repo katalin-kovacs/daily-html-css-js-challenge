@@ -1,0 +1,157 @@
+/* Enter your styles here */
+* {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #161616;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px auto;
+  max-width: 1000px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.review-stats {
+  width: 25%;
+}
+
+.review-stats .rating {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.review-stats .stats-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.review-stats .stats-label-block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-bottom: 0px;
+  margin-bottom: 4px;
+}
+
+.review-stats .stats-block .stats-meter {
+  width: 100%;
+  height: 6px;
+  border-radius: 22px;
+}
+
+.review-stats .stats-block .stats-meter::-webkit-meter-bar {
+  background-color: #282828;
+  height: 6px;
+  border: none;
+}
+
+.review-stats .stats-block .stats-meter::-webkit-meter-optimum-value {
+  background-color: #26972a;
+  height: 6px;
+}
+
+.user-reviews {
+  width: 70%;
+  font-size: 12px;
+}
+
+.user-review-box {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #282828;
+}
+
+.user-review-box :nth-last-of-type() {
+  padding-bottom: 24px;
+  border-bottom: none;
+}
+
+.user-review-box .name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.user-review-box .review-sum {
+  margin-top: 0px;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.review .rating span:nth-child(1) {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.review .rating {
+  display: flex;
+  align-items: baseline;
+}
+
+.pill {
+  background-color: #26972a;
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.8));
+  margin-bottom: 20px;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.highlights .date-box {
+  text-align: right;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .review-stats {
+    width: 100%;
+  }
+
+  .user-reviews {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .review,
+  .highlights {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .pill {
+    margin-bottom: 0px;
+  }
+
+  .highlights .date-box {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
