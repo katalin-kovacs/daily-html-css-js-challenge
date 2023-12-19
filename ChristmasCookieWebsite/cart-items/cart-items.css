@@ -1,0 +1,80 @@
+* {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #161616;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  margin: 100px auto;
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+table,
+table tr,
+table td {
+  border: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  font-weight: 400;
+  text-align: left;
+}
+
+table thead tr,
+table tbody tr {
+  border-bottom: 2px solid red !important;
+  background-color: none;
+}
+
+table tbody td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product div {
+  padding-right: 16px;
+}
+
+.product img {
+  height: 80px;
+  width: 80px;
+  background-color: #333333;
+  margin-right: 24px;
+}
+
+.quantity {
+  margin-right: 16px;
+  width: 100px;
+}
+
+.total-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+tfoot td:last-of-type {
+  text-align: right;
+}
+
+tfoot td:nth-last-child(2) {
+  font-weight: 600;
+}
