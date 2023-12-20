@@ -27,10 +27,6 @@ button {
   transition: 0.3s;
 }
 
-button:not(:first-of-type) {
-  margin-left: 16px;
-}
-
 button:hover {
   background-color: color-mix(in srgb, #26972a 75%, #000000);
 }
@@ -45,6 +41,9 @@ button[type="submit"] {
 }
 
 .tablist {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
   border-bottom: 1px solid #282828;
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -55,6 +54,7 @@ select {
   border: 1px solid #333333;
   padding: 12px 8px;
   border-radius: 4px;
+  color: #bebebe;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -86,21 +86,36 @@ fieldset div {
 
 .exp-date-wrapper {
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 16px;
+  width: 100%;
 }
 
 .exp-date-wrapper label {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 0px;
 }
 
-.exp-date-wrapper span {
-  margin-bottom: 4px;
+.exp-date-wrapper label:nth-child(1) {
+  flex-basis: 70%;
+}
+
+.exp-date-wrapper label:nth-child(2) {
+  flex-basis: 30%;
 }
 
 .exp-date {
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 16px;
-  min-width: 66%;
+}
+
+#exp-month,
+#exp-year {
+  width: 50%;
+  margin-top: 4px;
+}
+
+#ccv {
+  width: 100%;
+  margin-top: 4px;
 }

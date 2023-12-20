@@ -18,7 +18,7 @@ function openTab(event, contentName) {
 }
 
 //year select options
-for (let y = 2023; y < 2099; y++) {
+for (let y = 2023; y < 2044; y++) {
   let sel = document.getElementById("exp-year");
   sel.options[sel.options.length] = new Option(y, y);
 }
