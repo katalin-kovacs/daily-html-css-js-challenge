@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./checkout-form.css" />
+    <title>Checkout Form Page</title>
+  </head>
+  <body>
+    <h1>Payment Info</h1>
+    <form>
+      <legend>Payment method</legend>
+      <div class="tablist">
+        <button class="tablinks" onclick="openTab(event, 'Credit Card')">
+          Credit Card
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'PayPal')">
+          PayPal
+        </button>
+      </div>
+      <section class="tabcontent" id="Credit Card">
+        <fieldset aria-label="Card information">
+          <div>
+            <label for="name">Cardholder Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+          </div>
+
+          <div>
+            <label for="name">Card Number</label>
+            <input type="number" id="name" placeholder="1234 4567 7890 1112" />
+          </div>
+
+          <div class="exp-date-wrapper">
+            <label
+              ><span>Expiration date</span>
+              <div class="exp-date">
+                <select id="exp-month" aria-label="Expiration month">
+                  <option value="" disabled selected>MM</option>
+                </select>
+
+                <select id="exp-year" aria-label="Expiration year">
+                  <option value="" disabled selected>YYYY</option>
+                </select>
+              </div>
+            </label>
+
+            <label
+              ><span>CCV</span>
+              <input
+                type="number"
+                id="ccv"
+                placeholder="XXX"
+                aria-label="CCV number"
+              />
+            </label>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="tabcontent" id="PayPal">
+        <fieldset aria-label="PayPal information">
+          <label>PayPal</label>
+        </fieldset>
+      </section>
+
+      <button type="submit">Confirm and Pay $38.00</button>
+    </form>
+
+    <script src="./checkout-form.js"></script>
+  </body>
+</html>
