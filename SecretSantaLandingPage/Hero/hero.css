@@ -1,19 +1,45 @@
 * {
   font-family: "DM Sans", sans-serif;
   font-size: 22px;
-  background-color: #9ab3d2;
   color: #000000;
   box-sizing: border-box;
 }
 
 body {
-  margin: 50px auto;
+  margin: 0px auto;
   max-width: 1369px;
   width: 90vw;
+  height: 100vh;
+  background-color: #9ab3d2;
+  background-image: url("https://i.imgur.com/CvUIjhO.png"),
+    url("https://i.imgur.com/a9rTnzv.png"),
+    linear-gradient(
+      180deg,
+      rgba(255, 234, 234, 1) 60%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    );
+  background-position: left top, right top, left top, left top;
+  background-repeat: repeat, no-repeat, no-repeat, no-repeat;
+  background-size: cover, 30%, cover, cover;
 }
 
 .hero-header {
-  font-size: 18px;
+  margin-top: 50px;
+}
+
+.logo {
+  width: 185px;
+  height: 70px;
+}
+
+.logo img {
+  width: 185px;
+  height: auto;
 }
 
 .hero-header > nav {
@@ -29,6 +55,23 @@ body {
   padding: 0;
   justify-content: center;
   list-style-type: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-header > nav ul a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero-header > nav ul a:hover {
+  color: #00873e;
+}
+
+.hero-header > nav ul a[class*="active"] {
+  color: #00873e;
 }
 
 .login {
@@ -36,14 +79,53 @@ body {
   gap: 32px;
 }
 
+button {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+nav button {
+  font-size: 18px;
+}
+
+button[class*="primaryBtn"] {
+  background-color: #00873e;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+button[class*="primaryBtn"]:hover {
+  background-color: color-mix(in srgb, #00873e 75%, #000000);
+  color: #ffffff;
+}
+
+button[class*="secondaryBtn"] {
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+button[class*="secondaryBtn"]:hover {
+  background-color: rgba(00, 00, 00, 0.1);
+}
+
 .hero-body h1 {
   font-family: "Yeseva One", sans-serif;
   font-size: 75px;
   color: #333333;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.hero-body p {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .hero-body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 95px;
@@ -51,6 +133,57 @@ body {
 }
 
 .hero-body > div {
-  flex: 1 1 100%;
-  /* width: 50%; */
+  flex: 1 1 25%;
+  padding-top: 100px;
+}
+
+.hero-image {
+  min-width: 100px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#santa {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 20vh;
+  background: linear-gradient(
+    180deg,
+    rgba(206, 154, 211, 0.3) 0%,
+    rgba(254, 194, 142, 0.3) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Styles for the snowfall effect */
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+  animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
 }
