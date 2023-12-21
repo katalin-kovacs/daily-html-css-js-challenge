@@ -1,0 +1,56 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  background-color: #9ab3d2;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+  max-width: 1369px;
+  width: 90vw;
+}
+
+.hero-header {
+  font-size: 18px;
+}
+
+.hero-header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-header > nav ul {
+  display: flex;
+  gap: 80px;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.login {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-body h1 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 75px;
+  color: #333333;
+}
+
+.hero-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 95px;
+  width: 100%;
+}
+
+.hero-body > div {
+  flex: 1 1 100%;
+  /* width: 50%; */
+}
