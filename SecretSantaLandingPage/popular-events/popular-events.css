@@ -1,0 +1,82 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #ffeaea;
+  background-image: url("https://i.imgur.com/ewMW9ay.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1369px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+button {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #00873e;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: color-mix(in srgb, #00873e 75%, #000000);
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 54px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.party {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.party:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.party p {
+  margin-bottom: 32px;
+}
+
+.party > * {
+  flex: 1 1 45%;
+}
+
+.party-img {
+  display: grid;
+  justify-content: center;
+}
+
+.party img {
+  max-width: 360px;
+  display: grid;
+  align-items: center;
+}
+
+.party-txt {
+  max-width: 600px;
+}
