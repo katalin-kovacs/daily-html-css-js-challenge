@@ -1,0 +1,84 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fdebeb;
+}
+
+.container {
+  margin: 0px;
+  background-color: #d9f7ff;
+}
+
+.gift-items-container {
+  max-width: 1369px;
+  width: 90vw;
+  margin: 5vh auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+h2 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 54px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 38px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.gift-items {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.gift-items p {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.gift-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+@media (min-width: 35em) {
+  .gift-list {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.gift-card {
+  padding-right: 2em;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gift-card img {
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+}
+
+.gift-card p {
+  margin: 0;
+  text-align: center;
+}
