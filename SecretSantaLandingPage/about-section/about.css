@@ -1,0 +1,95 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fdebeb;
+}
+
+.container {
+  max-width: 1369px;
+  width: 90vw;
+  margin: 1vh auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 84px;
+  row-gap: 40px;
+}
+
+.tree {
+  max-height: 85vh;
+  justify-self: center;
+  align-self: center;
+}
+
+.container section:first-of-type {
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 65px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 24px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.about-items {
+  margin-bottom: 90px;
+}
+
+.about-card {
+  padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-card img {
+  margin-bottom: 2em;
+  width: 70px;
+  height: 70px;
+}
+
+.about-card p {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .tree {
+    max-height: 300px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .tree {
+    max-height: 150px;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+  }
+}
