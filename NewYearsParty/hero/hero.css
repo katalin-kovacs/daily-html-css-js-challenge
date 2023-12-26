@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #b47d36;
+  --border-color: #fffcfc;
+  --bg-red: #930201;
+  --bg-black: #070000;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-black);
+  background: radial-gradient(circle, var(--bg-red) 0%, var(--bg-black) 100%);
+  color: #ffffff;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1550px;
+  padding-inline: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+header > * {
+  flex: 1 1 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-inline: 0.5rem;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero > * {
+  flex: 1 1 50%;
+}
+
+.hero .image {
+  display: grid;
+  place-items: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 96px;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: 1;
+}
+
+h1.white {
+  color: #ffffff;
+}
+
+p {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+button {
+  padding: 25px 50px;
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid var(--border-color);
+}
+
+button:hover {
+  background-color: color-mix(in srgb, var(--primary-color) 85%, #070000);
+}
+
+@media (max-width: 1400px) {
+  .logo {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    gap: 1rem;
+  }
+
+  header > * {
+    flex: 1 1 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero > * {
+    flex: 1 1 100%;
+  }
+}
