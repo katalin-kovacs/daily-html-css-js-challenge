@@ -1,0 +1,140 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fdebeb;
+}
+
+.container {
+  max-width: 1369px;
+  width: 90vw;
+  margin: 1vh auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 65px;
+  color: #333333;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-family: "Yeseva One", sans-serif;
+  font-size: 24px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+button {
+  height: 50px;
+  text-align: center;
+  border: none;
+  padding: 10px 60px;
+  border-radius: 8px;
+  font-size: 22px;
+  background-color: #00873e;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: color-mix(in srgb, #00873e 75%, #000000);
+  color: #ffffff;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+.contact > * {
+  flex: 1 1 50%;
+}
+
+.contact > div {
+  padding-bottom: 1.5em;
+}
+
+.contact > div:first-of-type {
+  padding-right: 1.5em;
+}
+
+.contact > div:last-of-type {
+  padding-left: 1.5em;
+}
+
+form {
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+  border-radius: 25px;
+  padding: 3em;
+}
+
+form header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+form header img {
+  position: absolute;
+  top: -1.5em;
+  left: -5em;
+}
+
+form input {
+  border: 1px solid #6d6d6d;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  padding-inline: 25px;
+  padding-block: 10px;
+  margin-bottom: 16px;
+}
+
+.santa-container {
+  display: grid;
+  place-items: center;
+}
+
+.santa {
+  max-width: 555px;
+  max-height: 65vh;
+}
+
+.decoration {
+  height: 6rem;
+  max-height: 164px;
+  width: 100%;
+  background-image: url("https://i.imgur.com/Cd8RP4B.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+section:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials > * {
+  margin-inline: 0.5em;
+  transition: 0.3s;
+}
+
+.socials > *:hover {
+  filter: contrast(200%);
+}
