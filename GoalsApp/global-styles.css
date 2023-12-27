@@ -1,0 +1,68 @@
+:root {
+  --site-bg: #a2f3e5;
+
+  --primary-color: #7b61ff;
+  --card-bg: #f5f8ff;
+
+  --dark-grey: #212529;
+  --grey: #333333;
+  --light-grey: #6c757d;
+
+  --icon-green: #45bac5;
+  --icon-red: #fa6569;
+  --icon-blue: #2a72e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--grey);
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--site-bg);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--grey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: var(--grey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+h4 {
+  color: var(--dark-grey);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  width: 390px;
+  height: 844px;
+  overflow-x: scroll;
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 64px 16px 0 16px;
+}
