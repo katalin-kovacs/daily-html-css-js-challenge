@@ -12,124 +12,148 @@
       href="https://fonts.googleapis.com/css?family=Nunito:200,400,600"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../global-styles.css" />
-    <link rel="stylesheet" href="./home-view.html" />
+    <link rel="stylesheet" href="./home-view.css" />
     <title>Goals App - Home</title>
   </head>
   <body>
     <div class="container">
       <header>
         <div class="menu-icon">
-          <span>
-            <iconify-icon
-              width="18"
-              height="18"
-              icon="ph:squares-four"
-            ></iconify-icon>
-          </span>
+          <iconify-icon
+            width="24"
+            height="24"
+            icon="ph:squares-four"
+          ></iconify-icon>
         </div>
         <h1>DON’T GIVE UP</h1>
         <img src="https://i.imgur.com/j2M56AO.png" alt="Avatar" />
       </header>
-      <section class="challenges">
-        <div class="title">
-          <h2>2 Big Challenges</h2>
-          <p>Ambitious person aren't you?</p>
-        </div>
-        <div class="challenges-list">
-          <div class="challange-card">
-            <iconify-icon height="42" icon="basil:timer-outline"></iconify-icon>
-            <h3>Life Style</h3>
-            <p>Become a morning person</p>
-            <footer>
-              <p>Reminder</p>
-              <p class="reminder-time">Every Day</p>
-            </footer>
-          </div>
 
-          <div class="challange-card">
-            <iconify-icon
-              height="42"
-              icon="icon-park-outline:heart-rate
-            "
-            ></iconify-icon>
-            <h3>Healthy life</h3>
-            <p>Because your health is the most important</p>
-            <footer>
-              <p>Reminder</p>
-              <p class="reminder-time">Every Day</p>
-            </footer>
+      <div id="home-view">
+        <section class="challenges">
+          <div class="title">
+            <h2>2 Big Challenges</h2>
+            <p>Ambitious person aren't you?</p>
           </div>
-        </div>
-      </section>
+          <div class="challenges-list">
+            <div class="challange-card">
+              <iconify-icon
+                width="50"
+                height="50"
+                icon="basil:timer-outline"
+              ></iconify-icon>
+              <h3>Life Style</h3>
+              <p class="subtitle">Become a morning person</p>
+              <footer>
+                <p>Reminder</p>
+                <p class="reminder-time">Every Day</p>
+              </footer>
+            </div>
 
-      <section class="planning">
-        <div class="title"></div>
-        <div class="planning-list">
-          <div class="plan-card">
-            <div class="icon">
-              <iconify-icon
-                height="34"
-                icon="basil:lightbulb-outline"
-              ></iconify-icon>
-            </div>
-            <div>
-              <h4>Learn new skill</h4>
-              <p>Complete prototyping course</p>
-            </div>
-            <div class="actions-menu">
-              <iconify-icon width="15" icon="tabler:dots"></iconify-icon>
-            </div>
-          </div>
-
-          <div class="plan-card">
-            <div class="icon">
-              <iconify-icon
-                height="40"
-                with="40"
-                icon="basil:bag-outline"
-              ></iconify-icon>
-            </div>
-            <div>
-              <h4>New Design</h4>
-              <p>Create new app or web design</p>
-            </div>
-            <div class="open-actions-menu">
-              <iconify-icon
-                height="40"
-                with="40"
-                icon="mdi:clock-outline"
-              ></iconify-icon>
-              <div class="deadline">
-                <span>Deadline</span>
-                <span>06 January 2022</span>
+            <div class="challange-card">
+              <div class="card-body">
+                <iconify-icon
+                  width="50"
+                  height="50"
+                  icon="icon-park-outline:heart-rate"
+                ></iconify-icon>
+                <h3>Healthy life</h3>
+                <p class="subtitle">
+                  Because your health is the most important
+                </p>
               </div>
-              <iconify-icon
-                width="24"
-                height="24"
-                icon="tabler:chevron-down"
-              ></iconify-icon>
+              <footer>
+                <p>Reminder</p>
+                <p class="reminder-time">Every Day</p>
+              </footer>
             </div>
+          </div>
+        </section>
+
+        <section class="planning">
+          <div class="title">
+            <h2>Today’s Planning</h2>
+            <p>You have 3 actions to do</p>
           </div>
 
-          <div class="plan-card">
-            <div class="icon">
-              <iconify-icon
-                height="40"
-                with="40"
-                icon="basil:lightbulb-outline"
-              ></iconify-icon>
+          <div class="planning-list">
+            <div class="plan-card">
+              <div class="card-body">
+                <div class="icon">
+                  <iconify-icon
+                    height="34"
+                    icon="basil:lightbulb-outline"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <h4>Learn new skill</h4>
+                  <p class="subtitle">Complete prototyping course</p>
+                </div>
+              </div>
+              <div class="actions-menu">
+                <iconify-icon width="15" icon="tabler:dots"></iconify-icon>
+              </div>
             </div>
-            <div>
-              <h4>Learn new skill</h4>
-              <p>Complete prototyping course</p>
+
+            <div class="plan-card open">
+              <div class="card-body">
+                <div class="icon">
+                  <iconify-icon
+                    height="40"
+                    with="40"
+                    icon="basil:bag-outline"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <h4>New Design</h4>
+                  <p class="subtitle">Create new app or web design</p>
+                </div>
+              </div>
+              <div class="open-actions-menu">
+                <div class="action-body">
+                  <iconify-icon
+                    height="24"
+                    with="24"
+                    icon="mdi:clock-outline"
+                  ></iconify-icon>
+
+                  <div class="deadline">
+                    <span>Deadline</span>
+                    <span>06 January 2022</span>
+                  </div>
+                </div>
+
+                <iconify-icon
+                  width="24"
+                  height="24"
+                  icon="tabler:chevron-down"
+                ></iconify-icon>
+              </div>
             </div>
-            <div class="actions-menu">
-              <iconify-icon width="15" icon="tabler:dots"></iconify-icon>
+
+            <div class="plan-card">
+              <div class="card-body">
+                <div class="icon">
+                  <iconify-icon
+                    height="40"
+                    with="40"
+                    icon="basil:lightbulb-outline"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <h4>Learn new skill</h4>
+                  <p class="subtitle">Complete prototyping course</p>
+                </div>
+              </div>
+              <div class="actions-menu">
+                <iconify-icon width="15" icon="tabler:dots"></iconify-icon>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <div id="add-goal-view" style="display: none"></div>
 
       <section class="navigation">
         <div class="home">
@@ -140,12 +164,14 @@
           ></iconify-icon>
           <p>Home</p>
         </div>
-        <div class="add">
-          <iconify-icon
-            width="34"
-            height="34"
-            icon="akar-icons:plus"
-          ></iconify-icon>
+        <div class="add-wrapper">
+          <div id="addGoalBtn" class="add">
+            <iconify-icon
+              width="34"
+              height="34"
+              icon="akar-icons:plus"
+            ></iconify-icon>
+          </div>
         </div>
         <div class="settings">
           <iconify-icon
@@ -157,5 +183,7 @@
         </div>
       </section>
     </div>
+
+    <script src="./home-view.js"></script>
   </body>
 </html>

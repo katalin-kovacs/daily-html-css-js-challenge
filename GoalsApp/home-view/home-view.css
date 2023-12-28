@@ -1,1 +1,228 @@
 @import url("../global-styles.css");
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 108px;
+  width: 390px;
+  border-radius: 40px 40px 0 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-inline: 16px;
+  padding-bottom: 16px;
+}
+
+header .menu-icon {
+  width: 53px;
+  height: 53px;
+  border-radius: 10px;
+  background-color: var(--card-bg);
+}
+
+header .menu-icon {
+  display: grid;
+  place-items: center;
+}
+
+.challenges {
+  margin-top: 68px;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.title p {
+  margin: 0;
+}
+
+.challenges-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.challange-card {
+  flex: 1 1 50%;
+  background-color: var(--card-bg);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.challange-card h3 {
+  margin-bottom: 4px;
+}
+
+.challange-card .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.challange-card footer {
+  margin-top: 17px;
+  bottom: 20px;
+}
+
+.challange-card footer p {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--light-grey);
+}
+
+iconify-icon {
+  margin-bottom: 4px;
+}
+
+iconify-icon[icon="basil:timer-outline"] {
+  color: var(--icon-green);
+}
+
+iconify-icon[icon="icon-park-outline:heart-rate"] {
+  color: var(--icon-red);
+}
+
+.plan-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+  background-color: var(--card-bg);
+  margin-bottom: 12px;
+  border-radius: 12px;
+  padding: 11px;
+}
+
+.plan-card .card-body {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+div[class="plan-card open"] {
+  display: block;
+}
+
+div[class="plan-card open"] .card-body {
+  border-bottom: 2px solid var(--line-color);
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+}
+
+.open-actions-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-card .icon {
+  width: 53px;
+  height: 53px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.plan-card iconify-icon {
+  color: var(--icon-blue);
+}
+
+iconify-icon[icon="tabler:dots"] {
+  color: var(--light-grey);
+}
+
+iconify-icon[icon="mdi:clock-outline"],
+iconify-icon[icon="tabler:chevron-down"] {
+  color: var(--light-grey);
+}
+
+iconify-icon[icon="mdi:clock-outline"] {
+  margin-left: 15px;
+}
+
+.plan-card .subtitle {
+  color: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.action-body {
+  display: flex;
+}
+
+.deadline {
+  margin-left: 22px;
+}
+
+.deadline span {
+  color: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.deadline span:first-of-type {
+  margin-right: 11px;
+}
+
+.plan-card:last-of-type {
+  margin-bottom: 100px;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 390px;
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.25));
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.navigation > div {
+  display: grid;
+  place-items: center;
+}
+
+.navigation .home {
+  color: var(--primary-color);
+}
+
+.navigation .add-wrapper {
+  position: relative;
+}
+
+.navigation .add {
+  position: absolute;
+  top: -30px;
+  z-index: 1;
+  width: 71px;
+  height: 71px;
+  border-radius: 71px;
+  border: 7px solid #ffffff;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+
+.navigation .settings {
+  color: var(--grey);
+}
+
+.navigation .home p,
+.navigation .settings p {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
